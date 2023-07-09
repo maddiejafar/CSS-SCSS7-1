@@ -138,9 +138,6 @@ header nav .burger-btn {
   display: none;
 }
 @media (max-width: 1280px) {
-  header nav {
-    width: 100%;
-  }
   header nav .right-side {
     display: none;
   }
@@ -277,6 +274,11 @@ header nav .burger-btn {
 #landing-page-body #features-section {
   padding: 64px 0;
 }
+#landing-page-body #features-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #landing-page-body #features-section > div .text h4 {
   color: #272D37;
   text-align: center;
@@ -373,6 +375,53 @@ header nav .burger-btn {
   background-color: transparent;
   color: #437EF7;
 }
+@media (max-width: 1280px) {
+  #landing-page-body #features-section {
+    padding: 40px 0;
+  }
+  #landing-page-body #features-section > div {
+    width: 768px;
+  }
+  #landing-page-body #features-section > div .text p {
+    width: 704px;
+  }
+  #landing-page-body #features-section > div .row {
+    gap: 24px;
+    padding: 32px 0 0;
+  }
+  #landing-page-body #features-section > div .row .group {
+    width: 340px;
+    height: 206px;
+    padding: 16px;
+  }
+  #landing-page-body #features-section > div button {
+    display: none;
+  }
+}
+@media (max-width: 736px) {
+  #landing-page-body #features-section {
+    padding: 32px 0;
+  }
+  #landing-page-body #features-section > div .text h4 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+  }
+  #landing-page-body #features-section > div .text p {
+    width: 343px;
+  }
+  #landing-page-body #features-section > div .row {
+    flex-direction: column;
+    gap: 16px;
+  }
+  #landing-page-body #features-section > div .row .group h5 {
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.4px;
+    margin-top: 16px;
+    margin-bottom: 8px;
+  }
+}
 #landing-page-body #redefining-section {
   padding: 64px 0;
 }
@@ -390,6 +439,7 @@ header nav .burger-btn {
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.64px;
+  margin-bottom: 16px;
 }
 #landing-page-body #redefining-section > div .top p {
   color: #5F6D7E;
@@ -405,4 +455,82 @@ header nav .burger-btn {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  -moz-column-gap: 140px;
+       column-gap: 140px;
+}
+#landing-page-body #redefining-section > div .bottom .left {
+  width: 516px;
+}
+#landing-page-body #redefining-section > div .bottom .left a {
+  color: #437EF7;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}
+#landing-page-body #redefining-section > div .bottom .left h5 {
+  color: #272D37;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: -0.32px;
+  margin: 8px 0 16px;
+}
+#landing-page-body #redefining-section > div .bottom .left p {
+  color: #5F6D7E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  margin-bottom: 40px;
+}
+#landing-page-body #redefining-section > div .bottom .left button {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  color: #FFF;
+  background-color: #437EF7;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+}
+#landing-page-body #redefining-section > div .bottom .left button:hover {
+  transform: scale(1.05);
+}
+#landing-page-body #redefining-section > div .bottom .right img:last-child {
+  display: none;
+}
+@media (max-width: 1280px) {
+  #landing-page-body #redefining-section {
+    padding: 40px 0;
+  }
+  #landing-page-body #redefining-section > div {
+    gap: 40px;
+  }
+  #landing-page-body #redefining-section > div .top p {
+    width: 704px;
+  }
+  #landing-page-body #redefining-section > div .bottom {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+  #landing-page-body #redefining-section > div .bottom .left {
+    width: 704px;
+  }
+  #landing-page-body #redefining-section > div .bottom .right img:first-child {
+    display: none;
+  }
+  #landing-page-body #redefining-section > div .bottom .right img:last-child {
+    display: initial;
+  }
 }

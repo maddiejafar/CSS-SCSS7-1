@@ -64,7 +64,6 @@ header {
 
     @include for-type(tablet) {
         nav {
-            width: 100%;
             .right-side {
                 display: none;
             }
