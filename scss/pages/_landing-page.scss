@@ -1,0 +1,240 @@
+#landing-page-body {
+    .container {
+        width: 1280px;
+        margin: auto;
+        padding: 0 32px;
+    }
+
+    #hero-section {
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h1 {
+                color: $dark-gray-color;
+                text-align: center;
+                font-size: 52px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 60px;
+                letter-spacing: -0.52px;
+                width: 900px;
+                margin: 48px 0 24px;
+            }
+    
+            p {
+                color: $soft-gray-color;
+                text-align: center;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+                letter-spacing: -0.1px;
+                width: 900px;
+            }
+    
+            .buttons {
+                margin: 36px 0 48.19px;
+                display: flex;
+                gap: 16px;
+                .get-started {
+                    @include button-main($base-white-color, $button-blue-color, 12px 18px, 1px solid transparent, 6px);
+                    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+                    &:hover {
+                        border-color: #437EF7;
+                        background-color: transparent;
+                        color: #437EF7;
+                    }  
+                }
+    
+                .contact-us {
+                    @include button-main($dark-gray-color, $base-white-color, 12px 18px, 1px solid #DAE0E6, 6px);
+                    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+                    &:hover {
+                        border-color: $button-blue-color;
+                        color: $button-blue-color;
+                    }
+                }
+            }
+    
+            img {
+                object-fit:cover;
+                object-position: top;
+            }
+        }
+
+        @include for-type(tablet) {
+            > div {
+                h1 {
+                    width: 650px;
+                    margin: 32px 0 24px;
+                }
+                        
+                p {
+                    width: 672px;
+                }
+        
+                .buttons {
+                    margin: 36px 0 32px;
+                }
+                        
+                img {
+                    width: 656px;
+                    height: 280px;
+                }
+            }
+        }
+    
+        @include for-type(mobile) {
+            > div {
+                h1 {
+                    font-size: 36px;
+                    font-weight: 600;
+                    line-height: 44px;
+                    letter-spacing: -0.72px;
+                    width: 343px;
+                }
+            
+                p {
+                    width: 343px;
+                }
+        
+                .buttons {
+                    flex-direction: column;
+                    column-gap: 16px;
+                    width: 343px;
+                }
+        
+                img {
+                    width: 343px;
+                    height: 190px;
+                }
+            }
+        }
+    }
+
+    #features-section {
+        padding: 64px 0;
+        > div {
+            .text {
+                h4 {
+                    color: $dark-gray-color;
+                    text-align: center;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 40px;
+                    letter-spacing: -0.64px;
+                    margin-bottom: 16px;
+                } 
+                
+                p {
+                    color: $soft-gray-color;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.1px;
+                }
+            }
+
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
+                padding: 64px 0;
+                .group {
+                    width: 384px;
+                    height: 206px;
+                    padding: 24px 32px;
+                    border-radius: 5px;
+                    border: 1px solid #EAEBF0;
+                    background-color: $base-white-color;
+                    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+                    .show-more {
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        img {
+                            border-radius: 30px;
+                            background: #F5FAFF;
+                            padding: 8px
+                        }
+                        button {
+                            @include button-main($dark-gray-color, $base-white-color, 12px 18px, 1px solid #DAE0E6, 6px);
+                            box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+
+                            &:hover {
+                                border-color: $button-blue-color;
+                                color: $button-blue-color;
+                            }
+                        }
+                    }
+                    h5 {
+                        color: $dark-gray-color;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 30px;
+                        letter-spacing: -0.22px;
+                        margin-top: 24px;
+                        margin-bottom: 8px;
+                    }
+                    p {
+                        color: $soft-gray-color;
+                    }
+                }
+            }
+            button {
+                @include button-main($base-white-color, $button-blue-color, 12px 18px, 1px solid transparent, 6px);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+                &:hover {
+                    border-color: #437EF7;
+                    background-color: transparent;
+                    color: #437EF7;
+                } 
+            }
+        }
+    }
+
+    #redefining-section {
+        padding: 64px 0;
+        > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 64px;
+            .top {
+                h4 {
+                    color: $dark-gray-color;
+                    text-align: center;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 40px;
+                    letter-spacing: -0.64px;
+                }
+
+                p {
+                    color: $soft-gray-color;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.1px;
+                    width: 800px;
+                }
+            }
+
+            .bottom {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+        }
+    }
+
+}
+     

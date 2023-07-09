@@ -1,0 +1,33 @@
+@mixin button-main($text-color, $background-color, $padding, $border, $border-radius) {
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    color: $text-color;
+    background-color: $background-color;
+    padding: $padding;
+    border: $border;
+    border-radius: $border-radius;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+@mixin for-type($type) {
+    @if $type == mobile {
+        @media (max-width: 736px) {
+            @content;
+        }
+    }
+    @else if $type == tablet {
+        @media (max-width: 1280px) {
+            @content;
+        }
+    }
+    @else {
+        @media (min-width: 1280px) {
+            @content;
+        }
+    }
+
+}

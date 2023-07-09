@@ -1,0 +1,92 @@
+header {
+    padding: 20px 0;
+    border-bottom: 1px solid #EAEBF0;
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    
+        .left-side {
+            display: flex;
+            column-gap: 64px;
+            align-items: center;
+    
+            .nav-items {
+                display: flex;
+                column-gap: 32px;
+    
+                a {
+                    color: $dark-gray-color;
+                    font-size: 15px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: 22px;
+                    transition: 0.2s;
+    
+                    &:hover {
+                        color: #4b586e;
+                    }
+                }
+            }
+        }
+    
+        .right-side {
+            display: flex;
+            column-gap: 24px;
+            align-items: center;
+    
+            button:first-child {
+                @include button-main($button-blue-color, transparent, 0, none, 0);
+    
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+    
+            button:last-child {
+                @include button-main($base-white-color, $button-blue-color, 12px 18px, 2px solid transparent, 6px);
+                box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+    
+                &:hover {
+                    border-color: #437EF7;
+                    background-color: transparent;
+                    color: #437EF7;
+                }    
+            }
+        }
+    
+        .burger-btn {
+            background-color: transparent;
+            display: none;
+        }
+    }
+
+    @include for-type(tablet) {
+        nav {
+            width: 100%;
+            .right-side {
+                display: none;
+            }
+                        
+            .burger-btn {
+                display: initial;
+            }
+                        
+            .left-side {
+                a img {
+                    width: 128px;
+                    height: 32px;
+                }
+                        
+            .nav-items {
+                display: none;
+                }
+            }
+        }
+    }
+
+    @include for-type(mobile) {
+    }
+}
+
