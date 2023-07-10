@@ -677,6 +677,9 @@
     #latest-section {
         padding: 64px 0;
         > div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
             .top {
                 h4 {
                     color: $dark-gray-color;
@@ -684,7 +687,7 @@
                     font-style: normal;
                     font-weight: 700;
                     line-height: 40px;
-                    letter-spacing: -0.64px;
+                    letter-spacing: -0.64px;text-align: center;
                 }
                 p {
                     color: $soft-gray-color;
@@ -694,12 +697,18 @@
                     line-height: 24px;
                     letter-spacing: -0.1px;
                     width: 800px;
+                    margin: 16px 0 64px;
+                    text-align: center;
                 }
             }
             .bottom {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 32px;
                 .group {
                     width: 384px;
-                    border: 1px solid #5F6D7E;
+                    height: 538px;
+                    border: 1px solid #c3c9d0;
                     border-radius: 10px;
                     position: relative;
                     img:first-child {
@@ -707,9 +716,10 @@
                         border-top-right-radius: 10px;
                     }
 
-                    img:last-child {
+                    > img:last-child {
                         position: absolute;
                         bottom: 266px;
+                        left: 304px;
                     }
                     .text {
                         padding: 24px 32px;
@@ -757,6 +767,36 @@
                             font-weight: 400;
                             line-height: 24px;
                             letter-spacing: -0.1px;
+                        }
+
+                        button {
+                            @include button-main($button-blue-color, transparent, 0, 0, 0);
+                            display: flex;
+                            align-items: center;
+                            column-gap: 6px;
+                            &:hover {
+                                transform: scale(1.05);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include for-type(tablet) {
+            width: 768px;
+            padding: 48px 0;
+            > div {
+                .top {
+                    //width: 704px;
+                }
+                .bottom {
+                    //display: flex;
+                    //flex-wrap: wrap;
+                    .group {
+                        width: 336px;
+                        > img:first-child {
+                            width: 335px;
                         }
                     }
                 }

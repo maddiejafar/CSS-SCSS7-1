@@ -843,6 +843,11 @@ header nav .burger-btn {
 #landing-page-body #latest-section {
   padding: 64px 0;
 }
+#landing-page-body #latest-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 #landing-page-body #latest-section > div .top h4 {
   color: #272D37;
   font-size: 32px;
@@ -850,6 +855,7 @@ header nav .burger-btn {
   font-weight: 700;
   line-height: 40px;
   letter-spacing: -0.64px;
+  text-align: center;
 }
 #landing-page-body #latest-section > div .top p {
   color: #5F6D7E;
@@ -859,10 +865,18 @@ header nav .burger-btn {
   line-height: 24px;
   letter-spacing: -0.1px;
   width: 800px;
+  margin: 16px 0 64px;
+  text-align: center;
+}
+#landing-page-body #latest-section > div .bottom {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 #landing-page-body #latest-section > div .bottom .group {
   width: 384px;
-  border: 1px solid #5F6D7E;
+  height: 538px;
+  border: 1px solid #c3c9d0;
   border-radius: 10px;
   position: relative;
 }
@@ -870,9 +884,10 @@ header nav .burger-btn {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-#landing-page-body #latest-section > div .bottom .group img:last-child {
+#landing-page-body #latest-section > div .bottom .group > img:last-child {
   position: absolute;
   bottom: 266px;
+  left: 304px;
 }
 #landing-page-body #latest-section > div .bottom .group .text {
   padding: 24px 32px;
@@ -918,4 +933,37 @@ header nav .burger-btn {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: -0.1px;
+}
+#landing-page-body #latest-section > div .bottom .group .text button {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  color: #437EF7;
+  background-color: transparent;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 6px;
+       column-gap: 6px;
+}
+#landing-page-body #latest-section > div .bottom .group .text button:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 1280px) {
+  #landing-page-body #latest-section {
+    width: 768px;
+    padding: 48px 0;
+  }
+  #landing-page-body #latest-section > div .bottom .group {
+    width: 336px;
+  }
+  #landing-page-body #latest-section > div .bottom .group > img:first-child {
+    width: 335px;
+  }
 }
