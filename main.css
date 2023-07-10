@@ -161,6 +161,51 @@ header nav .burger-btn {
   }
 }
 
+footer {
+  padding: 64px 0;
+}
+footer > div {
+  display: flex;
+  justify-content: space-between;
+}
+footer > div div:first-child h6 {
+  color: #5F6D7E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  width: 247px;
+  margin: 16px 0;
+}
+footer > div div:first-child .icons {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+footer > div div h5 {
+  color: #272D37;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  margin-bottom: 24px;
+}
+footer > div div .content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+footer > div div .content a {
+  color: #5F6D7E;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+
 #landing-page-body .container {
   width: 1280px;
   margin: auto;

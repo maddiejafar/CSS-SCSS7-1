@@ -1,0 +1,50 @@
+footer {
+    padding: 64px 0;
+    > div {
+        display: flex;
+        justify-content: space-between;
+        div:first-child {
+            h6 {
+                color: $soft-gray-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.1px;
+                width: 247px;
+                margin: 16px 0;
+            }
+
+            .icons {
+                display: flex;
+                gap: 24px;
+                align-items: center;
+            }
+        }
+
+        div {
+            h5 {
+                color: $dark-gray-color;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: 24px;
+                letter-spacing: -0.1px;
+                margin-bottom: 24px;
+            }
+            .content {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                a {
+                    color: $soft-gray-color;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: -0.1px;
+                }
+            }
+        }
+    }
+}
