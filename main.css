@@ -507,6 +507,9 @@ header nav .burger-btn {
 #landing-page-body #redefining-section > div .bottom .left button:hover {
   transform: scale(1.05);
 }
+#landing-page-body #redefining-section > div .bottom .right img:nth-child(2) {
+  display: none;
+}
 #landing-page-body #redefining-section > div .bottom .right img:last-child {
   display: none;
 }
@@ -530,7 +533,141 @@ header nav .burger-btn {
   #landing-page-body #redefining-section > div .bottom .right img:first-child {
     display: none;
   }
+  #landing-page-body #redefining-section > div .bottom .right img:nth-child(2) {
+    display: initial;
+  }
+}
+@media (max-width: 736px) {
+  #landing-page-body #redefining-section > div {
+    gap: 32px;
+  }
+  #landing-page-body #redefining-section > div .top h4 {
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.48px;
+  }
+  #landing-page-body #redefining-section > div .top p {
+    width: 343px;
+  }
+  #landing-page-body #redefining-section > div .bottom {
+    -moz-column-gap: 32px;
+         column-gap: 32px;
+  }
+  #landing-page-body #redefining-section > div .bottom .left {
+    width: 343px;
+  }
+  #landing-page-body #redefining-section > div .bottom .left p {
+    margin-bottom: 32px;
+  }
+  #landing-page-body #redefining-section > div .bottom .right img:nth-child(2) {
+    display: none;
+  }
   #landing-page-body #redefining-section > div .bottom .right img:last-child {
     display: initial;
+  }
+}
+#landing-page-body #demonstrate-section {
+  padding: 64px 0;
+  background-color: #2B63D9;
+}
+#landing-page-body #demonstrate-section > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+}
+#landing-page-body #demonstrate-section > div .right {
+  width: 576px;
+}
+#landing-page-body #demonstrate-section > div .right a {
+  color: #FFF;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}
+#landing-page-body #demonstrate-section > div .right h5 {
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: -0.32px;
+  margin: 8px 0 16px;
+}
+#landing-page-body #demonstrate-section > div .right p {
+  color: #B1CCFB;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  margin-bottom: 40px;
+}
+#landing-page-body #demonstrate-section > div .right button {
+  display: flex;
+  align-items: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  color: #FFF;
+  background-color: #437EF7;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+}
+#landing-page-body #demonstrate-section > div .right button:hover {
+  transform: scale(1.05);
+}
+#landing-page-body #demonstrate-section > div .left img:nth-child(2) {
+  display: none;
+}
+#landing-page-body #demonstrate-section > div .left img:last-child {
+  display: none;
+}
+@media (max-width: 1280px) {
+  #landing-page-body #demonstrate-section {
+    padding: 40px 0;
+  }
+  #landing-page-body #demonstrate-section > div {
+    flex-direction: column;
+    gap: 48px;
+  }
+  #landing-page-body #demonstrate-section > div .left img:first-child {
+    display: none;
+  }
+  #landing-page-body #demonstrate-section > div .left img:nth-child(2) {
+    display: initial;
+  }
+  #landing-page-body #demonstrate-section > div .right {
+    width: 704px;
+  }
+  #landing-page-body #demonstrate-section > div .right h5 {
+    margin: 8px 0 16px;
+  }
+}
+@media (max-width: 736px) {
+  #landing-page-body #demonstrate-section {
+    padding: 32px 0;
+  }
+  #landing-page-body #demonstrate-section > div .left img:nth-child(2) {
+    display: none;
+  }
+  #landing-page-body #demonstrate-section > div .left img:last-child {
+    display: initial;
+  }
+  #landing-page-body #demonstrate-section > div .right {
+    width: 343px;
+  }
+  #landing-page-body #demonstrate-section > div .right h5 {
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: -0.56px;
   }
 }
