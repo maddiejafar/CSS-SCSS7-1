@@ -967,3 +967,46 @@ header nav .burger-btn {
     width: 335px;
   }
 }
+#landing-page-body #customers-section {
+  padding: 64px 0;
+}
+#landing-page-body #customers-section > div h4 {
+  color: #272D37;
+  text-align: center;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: -0.64px;
+}
+#landing-page-body #customers-section > div center p {
+  color: #5F6D7E;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+  width: 800px;
+  margin: 16px 0 64px;
+}
+#landing-page-body #customers-section > div .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#landing-page-body #customers-section > div .bottom > p {
+  color: #272D37;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.1px;
+}
+#landing-page-body #customers-section > div .bottom div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+}

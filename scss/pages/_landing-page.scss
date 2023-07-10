@@ -803,5 +803,52 @@
             }
         }
     }
+
+    #customers-section {
+        padding: 64px 0;
+        > div {
+            h4 {
+                color: $dark-gray-color;
+                text-align: center;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 40px;
+                letter-spacing: -0.64px;
+            }
+            center p {
+                color: $soft-gray-color;
+                text-align: center;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 24px;
+                letter-spacing: -0.1px;
+                width: 800px;
+                margin: 16px 0 64px;
+            }
+
+            .bottom {
+                > p {
+                    color: $dark-gray-color;
+                    text-align: center;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 24px;
+                    letter-spacing: -0.1px;
+                }
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    align-items: center;
+                }
+            }
+        }
+    }
 }
      
