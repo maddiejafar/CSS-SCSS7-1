@@ -1010,3 +1010,73 @@ header nav .burger-btn {
   gap: 16px;
   align-items: center;
 }
+#landing-page-body #welcome-section {
+  padding: 40px 0;
+}
+#landing-page-body #welcome-section > div {
+  display: flex;
+  align-items: center;
+  padding: 40px 64px;
+  background-color: #F8F9FB;
+  border-radius: 10px;
+  gap: 80px;
+}
+#landing-page-body #welcome-section > div .text a {
+  color: #437EF7;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: -0.1px;
+}
+#landing-page-body #welcome-section > div .text h5 {
+  color: #272D37;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 42px;
+  letter-spacing: -0.32px;
+  width: 568px;
+  margin-top: 8px;
+}
+#landing-page-body #welcome-section > div .input-button input {
+  padding: 12px 16px;
+  border-radius: 6px 0px 0px 6px;
+  border: 1px solid #DAE0E6;
+  background-color: #FFF;
+  outline: none;
+  width: 352px;
+  height: 46px;
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.04);
+}
+#landing-page-body #welcome-section > div .input-button input::-moz-placeholder {
+  color: #5F6D7E;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+}
+#landing-page-body #welcome-section > div .input-button input::placeholder {
+  color: #5F6D7E;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: -0.1px;
+}
+#landing-page-body #welcome-section > div .input-button button {
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  color: #FFF;
+  background-color: #437EF7;
+  padding: 12px 18px;
+  border: 1px solid transparent;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-left: -5px;
+}
