@@ -64,6 +64,9 @@
         }
 
         @include for-type(tablet) {
+            .container {
+                width: 768px;
+            }
             > div {
                 h1 {
                     width: 650px;
@@ -86,6 +89,9 @@
         }
     
         @include for-type(mobile) {
+            .container {
+                width: 375px;
+            }
             > div {
                 h1 {
                     font-size: 36px;
@@ -201,6 +207,9 @@
         }
 
         @include for-type(tablet) {
+            .container {
+                width: 768px;
+            }
             padding: 40px 0;
             > div {
                 width: 768px;
@@ -226,6 +235,9 @@
         }
 
         @include for-type(mobile) {
+            .container {
+                width: 375px;
+            }
             padding: 32px 0;
             > div {
                 .text {
@@ -343,6 +355,9 @@
         }
 
         @include for-type(tablet) {
+            .container {
+                width: 768px;
+            }
             padding: 40px 0;
             > div {
                 gap: 40px;
@@ -372,6 +387,9 @@
         }
 
         @include for-type(mobile) {
+            .container {
+                width: 375px;
+            }
             > div {
                 gap: 32px;
                 .top {
@@ -467,6 +485,10 @@
         }
 
         @include for-type(tablet) {
+            .container {
+                width: 768px;
+            }
+            width: 100%;
             padding: 40px 0;
             > div {
                 flex-direction: column;
@@ -489,6 +511,9 @@
         }
 
         @include for-type(mobile) {
+            .container {
+                width: 375px;
+            }
             padding: 32px 0;
             > div {
                 .left {
@@ -587,6 +612,9 @@
         }
 
         @include for-type(tablet) {
+            .container {
+                width: 768px;
+            }
             padding: 40px 0;
             > div {
                 flex-direction: column-reverse;
@@ -619,6 +647,9 @@
         }
 
         @include for-type(mobile) {
+            .container {
+                width: 375px;
+            }
             padding: 32px 0;
             > div {
                 gap: 32px;
@@ -641,6 +672,96 @@
                 }
             }
         }      
+    }
+
+    #latest-section {
+        padding: 64px 0;
+        > div {
+            .top {
+                h4 {
+                    color: $dark-gray-color;
+                    font-size: 32px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 40px;
+                    letter-spacing: -0.64px;
+                }
+                p {
+                    color: $soft-gray-color;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 24px;
+                    letter-spacing: -0.1px;
+                    width: 800px;
+                }
+            }
+            .bottom {
+                .group {
+                    width: 384px;
+                    border: 1px solid #5F6D7E;
+                    border-radius: 10px;
+                    position: relative;
+                    img:first-child {
+                        border-top-left-radius: 10px;
+                        border-top-right-radius: 10px;
+                    }
+
+                    img:last-child {
+                        position: absolute;
+                        bottom: 266px;
+                    }
+                    .text {
+                        padding: 24px 32px;
+                        .time {
+                            display: flex;
+                            align-items: center;
+                            gap: 16px;
+                            
+                            button {
+                                color: $button-blue-color;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 20px;
+                                letter-spacing: -0.1px;
+                                padding: 4px 12px;
+                                border-radius: 5px;
+                                background-color: #F5FAFF;
+                            }
+                            h6 {
+                                color: $soft-gray-color;
+                                font-size: 14px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 20px;
+                                letter-spacing: -0.1px;
+                            }
+                        }
+
+                        h5 {
+                            color: $dark-gray-color;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 30px;
+                            letter-spacing: -0.22px;
+                            margin: 20px 0 16px;
+                        }
+
+                        p {
+                            color: $soft-gray-color;
+                            margin-bottom: 24px;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 24px;
+                            letter-spacing: -0.1px;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
      

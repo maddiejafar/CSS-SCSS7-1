@@ -63,7 +63,11 @@ header {
     }
 
     @include for-type(tablet) {
+        .container {
+            width: 768px;
+        }
         nav {
+            //width: 100%;
             .right-side {
                 display: none;
             }
@@ -86,6 +90,9 @@ header {
     }
 
     @include for-type(mobile) {
+        .container {
+            width: 375px;
+        }
     }
 }
 
