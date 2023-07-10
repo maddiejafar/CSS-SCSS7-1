@@ -1,48 +1,197 @@
 footer {
     padding: 64px 0;
     > div {
-        display: flex;
-        justify-content: space-between;
-        div:first-child {
-            h6 {
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 16px;
+            margin-top: 64px;
+            div {
+                .icons {
+                    display: none;
+                }
+            }
+            > img {
+                padding: 8px;
+                border-radius: 30px;
+                background-color: #F5FAFF;
+            }
+            p {
                 color: $soft-gray-color;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 24px;
                 letter-spacing: -0.1px;
-                width: 247px;
-                margin: 16px 0;
-            }
-
-            .icons {
-                display: flex;
-                gap: 24px;
-                align-items: center;
             }
         }
-
-        div {
-            h5 {
-                color: $dark-gray-color;
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 600;
-                line-height: 24px;
-                letter-spacing: -0.1px;
-                margin-bottom: 24px;
+        .top {
+            display: flex;
+            justify-content: space-between;
+            .left {
+                div:first-child {
+                    h6 {
+                        color: $soft-gray-color;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 24px;
+                        letter-spacing: -0.1px;
+                        width: 247px;
+                        margin: 16px 0;
+                    }
+        
+                    .icons {
+                        display: flex;
+                        gap: 24px;
+                        align-items: center;
+                    }
+                }
+    
+                div:last-child {
+                    display: none;
+                }
             }
-            .content {
+    
+            .right {
                 display: flex;
+                gap: 150px;
+                div {
+                    h5 {
+                        color: $dark-gray-color;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: 24px;
+                        letter-spacing: -0.1px;
+                        margin-bottom: 24px;
+                    }
+                    .content {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        a {
+                            color: $soft-gray-color;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 500;
+                            line-height: 24px;
+                            letter-spacing: -0.1px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @include for-type(tablet) {
+        .container {
+            width: 768px !important;
+        }
+        padding: 40px 0;
+        > div {
+            .top {
                 flex-direction: column;
-                gap: 12px;
-                a {
-                    color: $soft-gray-color;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 24px;
-                    letter-spacing: -0.1px;
+                .left {
+                    margin-bottom: 32px;
+                    display: flex;
+                    justify-content: space-between;
+                    div:last-child {
+                        display: initial;
+                        display: flex;
+                        flex-direction: column;
+                        h5 {
+                            color: $dark-gray-color;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 600;
+                            line-height: 24px;
+                            letter-spacing: -0.1px;
+                            margin-bottom: 24px;
+                        }
+    
+                        .content {
+                            a {
+                                color: $soft-gray-color;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 500;
+                                line-height: 24px;
+                                letter-spacing: -0.1px;
+                            }
+                        }
+                        
+                    }
+    
+                    div:first-child {
+                        .icons {
+                            display: none;
+                        }
+                    }
+                }
+                .right {
+                    gap: 200px;
+                    div:nth-child(3) {
+                        display: none;
+                    }
+                }
+            }
+            .bottom {
+                div {
+                    display: flex;
+                    gap: 230px  ;
+                    .icons {
+                        display: initial;
+                        display: flex;
+                        gap: 24px;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+    }
+
+    @include for-type(mobile) {
+        .container {
+            width: 375px !important;
+        }
+
+        padding: 32px 0;
+        > div {
+            .top {
+                .left {
+                    div:first-child {
+                        h6 {
+                            width: 343px;
+                        }
+                        .icons {
+                            display: initial;
+                            display: flex;
+                            flex-direction: row;
+                            gap: 64px;
+                        }
+                    }
+                    div:last-child {
+                        display: none;
+                    }
+                }
+                .right {
+                    flex-wrap: wrap;
+                    width: 343px;
+                    gap: 64px;
+                    div:nth-child(3) {
+                        display: initial;
+                    }
+                }
+            }
+
+            .bottom {
+                gap: 8px;
+                div {
+                    .icons {
+                        display: none;
+                    }
                 }
             }
         }

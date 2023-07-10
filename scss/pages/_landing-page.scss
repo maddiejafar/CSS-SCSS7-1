@@ -6,6 +6,7 @@
     }
 
     #hero-section {
+        background-color: #E8EFFD;
         > div {
             display: flex;
             flex-direction: column;
@@ -34,7 +35,7 @@
             }
     
             .buttons {
-                margin: 36px 0 48.19px;
+                margin: 36px 0 32px;
                 display: flex;
                 gap: 16px;
                 .get-started {
@@ -99,6 +100,7 @@
                     line-height: 44px;
                     letter-spacing: -0.72px;
                     width: 343px;
+                    margin: 24px 0 16px;
                 }
             
                 p {
@@ -109,6 +111,7 @@
                     flex-direction: column;
                     column-gap: 16px;
                     width: 343px;
+                    margin: 24px 0;
                 }
         
                 img {
@@ -155,7 +158,6 @@
                 padding: 64px 0;
                 .group {
                     width: 384px;
-                    height: 206px;
                     padding: 24px 32px;
                     border-radius: 5px;
                     border: 1px solid #EAEBF0;
@@ -223,12 +225,10 @@
                     padding: 32px 0 0;
                     .group {
                         width: 340px;
-                        height: 206px;
-                        padding: 16px;
                     }
                 }
 
-                button {
+                > button {
                     display: none;
                 }
             }
@@ -255,6 +255,7 @@
                     flex-direction: column;
                     gap: 16px;
                     .group {
+                        padding: 16px;
                         h5 {
                             font-size: 20px;
                             line-height: 28px;
@@ -516,6 +517,7 @@
             }
             padding: 32px 0;
             > div {
+                gap: 32px;
                 .left {
                     img:nth-child(2) {
                         display: none;
@@ -655,11 +657,10 @@
                 gap: 32px;
                 .left {
                     width: 343px;
-                    p {
+                    h5 {
                         font-size: 28px;
                         line-height: 36px;
                         letter-spacing: -0.56px;
-                        margin: 16px 0 32px;
                     }
                 }
                 .right {
@@ -703,12 +704,9 @@
             }
             .bottom {
                 display: flex;
-                flex-wrap: wrap;
                 gap: 32px;
                 .group {
-                    width: 384px;
-                    height: 538px;
-                    border: 1px solid #c3c9d0;
+                    border: 1px solid #e3e7ed;
                     border-radius: 10px;
                     position: relative;
                     img:first-child {
@@ -718,7 +716,7 @@
 
                     > img:last-child {
                         position: absolute;
-                        bottom: 266px;
+                        bottom: 256px;
                         left: 304px;
                     }
                     .text {
@@ -784,19 +782,78 @@
         }
 
         @include for-type(tablet) {
-            width: 768px;
+            .container {
+                width: 768px;
+            }
             padding: 48px 0;
             > div {
                 .top {
-                    //width: 704px;
+                    p {
+                        width: 704px;
+                        margin: 16px 0 32px;
+                    }
                 }
                 .bottom {
-                    //display: flex;
-                    //flex-wrap: wrap;
+                    flex-wrap: wrap;
                     .group {
                         width: 336px;
                         > img:first-child {
-                            width: 335px;
+                            width: 336px;
+                            height: 248px;
+                        }
+
+                        > img:last-child {
+                            left: 256px;
+                            bottom: 340px;
+                        }
+
+                        .text {
+                            h5 {
+                                width: 272px;
+                            }
+                            p {
+                                width: 272px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        @include for-type(mobile) {
+            .container {
+                width: 375px;
+            }
+            padding: 32px 0;
+            > div {
+                .top {
+                    h4 {
+                        font-size: 24px;
+                        line-height: 32px;
+                        letter-spacing: -0.48px;
+                    }
+
+                    p {
+                        width: 343px;
+                    }
+                }
+
+                .bottom {
+                    flex-direction: column;
+                    gap: 16px;
+                    .group {
+                        width: 343px;
+                        > img:first-child {
+                            width: 343px;
+                            height: 184px;
+                        }
+                        .text {
+                            h5 {
+                                width: 279px;
+                                font-size: 20px;
+                                line-height: 28px;
+                                letter-spacing: -0.4px;
+                            }
                         }
                     }
                 }
@@ -829,9 +886,14 @@
             }
 
             .bottom {
+                .divider {
+                    margin: 0 48px;
+                }
+                .line {
+                    display: none;
+                }
                 > p {
                     color: $dark-gray-color;
-                    text-align: center;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 500;
@@ -839,13 +901,68 @@
                     letter-spacing: -0.1px;
                 }
                 display: flex;
-                justify-content: space-between;
                 align-items: center;
                 div {
                     display: flex;
                     flex-direction: column;
                     gap: 16px;
                     align-items: center;
+                    width: 316px;
+                    text-align: center;
+                }
+            }
+        }
+
+        @include for-type(tablet) {
+            .container {
+                width: 768px;
+            }
+            padding: 40px 0;
+            > div {
+                center p {
+                    width: 704px;
+                    margin: 16px 0 40px;
+                }
+
+                .bottom {
+                    .divider {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+
+        @include for-type(mobile) {
+            .container {
+                width: 375px;
+            }
+            padding: 32px 0;
+            > div {
+                h4 {
+                    font-size: 24px;;
+                    line-height: 32px;
+                    letter-spacing: -0.48px;
+                }
+                center p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    letter-spacing: -0.1px;
+                    width: 343px;
+                    margin: 12px 0 69px;
+                } 
+
+                .bottom {
+                    .divider {
+                        display: none;
+                    }
+                    .line {
+                        display: initial;
+                        margin: 48px 0;
+                    }
+                    flex-direction: column;
+                    div {
+                        width: 343px;
+                    }
                 }
             }
         }
@@ -856,10 +973,11 @@
         > div {
             display: flex;
             align-items: center;
+            justify-content: center;
             padding: 40px 64px;
             background-color: #F8F9FB;
             border-radius: 10px;
-            gap: 80px;
+            column-gap: 80px;
             .text {
                 a {
                     color: $button-blue-color;
@@ -901,8 +1019,75 @@
                     }
                 }
                 button {
-                    @include button-main($base-white-color, $button-blue-color, 12px 18px, 1px solid transparent, 0 6px 6px 0);
+                    @include button-main($base-white-color, $button-blue-color, 12px 18px, none, 0 6px 6px 0);
                     margin-left: -5px;
+                }
+            }
+        }
+
+        @include for-type(tablet) {
+            .container {
+                width: 768px;
+            }
+
+            padding: 40px 0;
+            > div {
+                flex-direction: column;
+                gap: 32px;
+                padding: 32px;
+
+                .text {
+                    h5 {
+                        width: 640px;
+                    }
+                }
+
+                .input-button {
+                    input {
+                        width: 554px;
+                    }
+                    button {
+                        width: 88px;
+                    }
+                }
+            }
+        }
+        @include for-type(mobile) {
+            .container {
+                width: 375px;
+            }
+            padding: 32px 0;
+            > div {
+                flex-direction: column;
+                gap: 16px;
+                padding: 16px;
+
+                .text {
+                    h5 {
+                        font-size: 28px;
+                        line-height: 36px;
+                        letter-spacing: -0.56px;
+                        width: 311px;
+                    }
+                }
+
+                .input-button {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    align-items: center;
+
+                    input {
+                        border-top-right-radius: 6px;
+                        border-bottom-right-radius: 6px;
+                        width: 311px;
+                    }
+
+                    button {
+                        border-top-left-radius: 6px;
+                        border-bottom-left-radius: 6px;
+                        width: 311px;
+                    }
                 }
             }
         }
