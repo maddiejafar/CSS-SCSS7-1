@@ -671,3 +671,14 @@ header nav .burger-btn {
     letter-spacing: -0.56px;
   }
 }
+#landing-page-body #demonstrate-section2 {
+  padding: 64px 0;
+}
+#landing-page-body #demonstrate-section2 > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#landing-page-body #demonstrate-section2 > div .left h5 {
+  color: #272D37;
+}
